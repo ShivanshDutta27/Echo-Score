@@ -53,14 +53,7 @@ const Home = ({loginEndPoint}) => {
           Uncover the depth of your music taste. Explore your listening habits, 
           find rare gems, and see how your favorites compare to the world.
         </motion.p>
-        <motion.div className="flex items-center justify-center p-8">
-                  <a href={loginEndPoint} className="text-white font-outfit font-semibold   drop-shadow-neon text-xl p-4 bg-green-500 rounded">
-                    Login
-                  </a>
-                </motion.div>
-      </motion.div>
-
-      <motion.div
+        <motion.div
           className="mt-6 p-4 bg-red-600/20 text-red-100 border border-red-400 rounded text-sm max-w-xl"
           variants={subheadingVariants}
           transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
@@ -68,6 +61,14 @@ const Home = ({loginEndPoint}) => {
           ⚠️ Due to Spotify’s new policy (May 2025), only approved organizations can request production access.
           This app currently runs in development mode and is only accessible to whitelisted Spotify accounts.
         </motion.div>
+        <motion.div className="flex items-center justify-center p-8">
+                  <a href={loginEndPoint} className="text-white font-outfit font-semibold   drop-shadow-neon text-xl p-4 bg-green-500 rounded">
+                    Login
+                  </a>
+                </motion.div>
+      </motion.div>
+
+      
     </div>
   );
 };
