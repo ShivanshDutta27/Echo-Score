@@ -54,7 +54,7 @@ const Home = ({loginEndPoint}) => {
           find rare gems, and see how your favorites compare to the world.
         </motion.p>
         <motion.div
-          className="mt-6 p-4 bg-neon-green text-red-100 border border-red-400 rounded text-sm max-w-xl"
+          className="mt-6 p-4  text-red-100 border border-neon-green rounded text-sm max-w-xl"
           variants={subheadingVariants}
           transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
         >
