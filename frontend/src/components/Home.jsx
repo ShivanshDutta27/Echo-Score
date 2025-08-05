@@ -59,6 +59,15 @@ const Home = ({loginEndPoint}) => {
                   </a>
                 </motion.div>
       </motion.div>
+
+      <motion.div
+          className="mt-6 p-4 bg-red-600/20 text-red-100 border border-red-400 rounded text-sm max-w-xl"
+          variants={subheadingVariants}
+          transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
+        >
+          ⚠️ Due to Spotify’s new policy (May 2025), only approved organizations can request production access.
+          This app currently runs in development mode and is only accessible to whitelisted Spotify accounts.
+        </motion.div>
     </div>
   );
 };
