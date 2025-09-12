@@ -51,7 +51,7 @@ const Home = ({ loginEndPoint }) => {
         <motion.div className="flex items-center justify-center p-8">
           <a
             href={loginEndPoint}
-            className="text-white font-outfit font-semibold drop-shadow-neon text-xl p-4 bg-lime-500 rounded-full"
+            className="text-white font-outfit font-semibold drop-shadow-neon text-xl p-4 bg-[#00ff66] rounded-full"
           >
             Login
           </a>
@@ -63,7 +63,7 @@ const Home = ({ loginEndPoint }) => {
             onClick={() => setShowNote(!showNote)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="px-4 py-2 bg-lime-500 text-black font-medium rounded-full shadow-md"
+            className="px-4 py-2 bg-[#00ff66] text-black font-medium rounded-full shadow-md"
           >
             {showNote ? 'Close' : 'Note'}
           </motion.button>
@@ -75,7 +75,7 @@ const Home = ({ loginEndPoint }) => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
-                className="mt-2 p-4 bg-black/80 border border-lime-500 rounded-lg text-sm text-lime-100 max-w-xs shadow-lg"
+                className="mt-2 p-4 bg-black/80 border border-[#00ff66] rounded-lg text-sm text-[#00ffcc] max-w-xs shadow-lg"
               >
                 ⚠️ Due to Spotify’s policy, this app runs in development mode
                 and is only accessible to whitelisted Spotify accounts.
