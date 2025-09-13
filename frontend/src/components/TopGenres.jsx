@@ -9,10 +9,10 @@ const TopGenres = ({ topArtists }) => {
   });
   const sortedGenres = Object.entries(genreCount)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 5);
+    .slice(0, 3);
 
   return (
-    <div className="bg-purple-200 p-6 rounded-2xl shadow-lg shadow-purple-300 w-full">
+    <div className="bg-purple-100 p-6 rounded-2xl shadow-lg shadow-purple-300 w-full">
       <h3 className="text-3xl font-bold mb-6 text-gray-800 text-center">Top Genres</h3>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
         {sortedGenres.map(([genre, count]) => (

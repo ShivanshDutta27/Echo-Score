@@ -44,7 +44,7 @@ const PlaylistCreator = ({ accessToken, tracks }) => {
   };
 
   return (
-    <div className="bg-purple-200 p-6 rounded-2xl shadow-lg shadow-purple-300 w-full max-w-md mx-auto flex flex-col gap-4">
+    <div className="bg-purple-100 p-6 rounded-2xl shadow-lg shadow-purple-300 w-full max-w-md mx-auto flex flex-col gap-4">
         <input
             className="w-full p-3 rounded-xl border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400"
             value={playlistName}

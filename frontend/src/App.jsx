@@ -93,7 +93,7 @@ const App = () => {
             </div>
           </section>
 
-          <section className="w-full min-h-screen flex flex-col items-center justify-center bg-emerald-100">
+          <section className="w-full min-h-screen flex flex-col items-center justify-center bg-amber-100">
             <div className="flex flex-col gap-12 w-full max-w-5xl px-4">
               <TopArtists topArtists={topArtists || []} />
             </div>
@@ -107,7 +107,6 @@ const App = () => {
               </div>
 
               <div className="bg-purple-200 p-6 rounded-2xl shadow-lg flex flex-col gap-4">
-                <h2 className="text-2xl font-bold text-center">Your Top Genres</h2>
                 <TopGenres topArtists={topArtists || []} />
               </div>
             </div>
