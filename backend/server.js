@@ -15,14 +15,23 @@ const redirectURL = process.env.REDIRECT_URI;
 app.use(cors({ origin: "https://echoscore-ofl3.vercel.app/" })); // Allow frontend domain
 
 
-// Root route (optional)
 app.get('/', (req, res) => {
   res.send('Backend server is running. Use /login to authenticate.');
 });
 console.log("Redirect URI:", process.env.REDIRECT_URI);
 
 app.get('/login', (req, res) => {
-  const scope = 'user-library-read playlist-read-private';
+  const scope = `
+user-read-private
+user-read-email
+user-top-read
+playlist-read-private
+playlist-modify-private
+playlist-modify-public
+user-library-read
+user-follow-read
+`.replace(/\s+/g, ' ').trim();
+
   const authParams = querystring.stringify({
     response_type: 'code',
     client_id: clientID,
