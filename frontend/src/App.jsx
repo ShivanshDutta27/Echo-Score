@@ -99,19 +99,20 @@ const App = () => {
             </div>
           </section>
 
-          <section className="w-full min-h-1/2 flex flex-col items-center justify-center bg-purple-100">
-            <div className="flex flex-col gap-6 w-full max-w-3xl px-4">
-              <h2 className="text-2xl font-bold mb-4">Create a Playlist</h2>
-              <PlaylistCreator accessToken={accessToken} tracks={topTracks || []} />
+          <section className="w-full min-h-screen flex flex-col items-center justify-center bg-purple-100 px-4">
+            <div className="flex flex-col gap-12 w-full max-w-3xl">
+              <div className="bg-purple-200 p-6 rounded-2xl shadow-lg flex flex-col gap-4">
+                <h2 className="text-2xl font-bold text-center">Create a Playlist</h2>
+                <PlaylistCreator accessToken={accessToken} tracks={topTracks || []} />
+              </div>
+
+              <div className="bg-purple-200 p-6 rounded-2xl shadow-lg flex flex-col gap-4">
+                <h2 className="text-2xl font-bold text-center">Your Top Genres</h2>
+                <TopGenres topArtists={topArtists || []} />
+              </div>
             </div>
           </section>
 
-          <section className="w-full min-h-1/2 flex flex-col items-center justify-center bg-yellow-100">
-            <div className="flex flex-col gap-6 w-full max-w-3xl px-4">
-              <h2 className="text-2xl font-bold mb-4">Your Top Genres</h2>
-              <TopGenres topArtists={topArtists || []} />
-            </div>
-          </section>
 
           <section className="w-full py-12 flex flex-col items-center bg-gray-800">
             <footer className="text-white py-4 text-center w-full">
